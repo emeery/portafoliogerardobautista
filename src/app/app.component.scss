@@ -1,0 +1,112 @@
+.example-container {
+    height: 100%;
+    // sborder: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav {
+    background-color: rgb(18, 18, 19);
+    height: 92%;
+    //background-image: linear-gradient(to left, #0f0e1a, #151529, #1b1a39, #211f4a, #2a235a);
+  }
+  
+  .title {
+    font-family: NeueMontrealMediumItalic;
+    font-style: normal;
+    color: silver;
+    font-size:xx-large;
+  }
+  
+  .subtitle {
+    font-family: NeueMontrealMediumItalic;
+    font-style: normal;
+    color: whitesmoke;
+  }
+  
+  #vanta {
+    z-index: -1;
+  }
+  
+  // Move the content down so that it won't be hidden by the toolbar
+  mat-sidenav {
+    padding-top: 3.5rem;
+    transition: width 0.3s ease;
+  
+    @media screen and (min-width: 600px) {
+      padding-top: 4rem;
+    }
+  
+    .entry {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem;
+    }
+  
+  }
+  
+  // Move the content down so that it won't be hidden by the toolbar
+  mat-sidenav-content {
+    padding-top: 3.5rem;
+  
+    @media screen and (min-width: 600px) {
+      padding-top: 4rem;
+    }
+  }
+  
+  .expanded {
+    width: 250px;
+  }
+  
+  /* Core functionality */
+  #animated-text-strip{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: hidden;
+  }
+  #animated-text-strip .marquee {
+    white-space: nowrap;
+    animation: marquee 5s linear infinite;
+    max-width: none;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
+  /* Styles for the sake of the demonstration */
+  #animated-text-strip{
+    background:black;
+    padding: 1rem 0;
+  }
+  .marquee{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-family: NeueMontrealMediumItalic;
+    color: white;
+  }   
+  
+  .color-sale {
+    color: orange
+  }
+  
+  p {
+    font-size: 2rem;
+    font-family: NeueMontrealMediumItalic;
+  }
+  
+  
+  
+  .modal-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-family: NeueMontrealMediumItalic;
+  }
+  
+  
+  

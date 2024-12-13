@@ -1,0 +1,53 @@
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-container {
+    margin-left: 10px;
+  }
+  
+  #title {
+    font-family: NeueMontrealMediumItalic;
+    font-style: normal;
+    color: silver;
+    font-size: 35rem;
+  }
+  
+  .subtitle {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 95px;
+    color: whitesmoke;
+  }
+  
+  .subtitle:nth-child(1) {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 55px;
+    color: whitesmoke;
+  }
+  
+  
+  
+  .date {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 35px;
+    color: whitesmoke;
+  }
+  
+  span {
+    color: white;
+  }
+  
+  .footer {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 14px;
+    color: lightslategray;
+  }
+  

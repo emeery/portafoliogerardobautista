@@ -39,9 +39,22 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.scss",
+              "src/assets/fonts/customFonts.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./src/scripts/three.min.js",
+              "./src/scripts/vanta.trunk.min.js",
+              "./src/scripts/vanta.rings.min.js",
+              "./src/scripts/vanta.globe.min.js",
+              "./src/scripts/vanta.fog.min.js",
+              "./src/scripts/vanta.topology.min.js",
+              "./src/scripts/vanta.halo.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -98,6 +111,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/cyan-orange.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -105,5 +119,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
