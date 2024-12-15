@@ -1,0 +1,41 @@
+p {
+    color: sandybrown;
+    font-size: 6vw;
+    font-family: MountainsofChristmasBold;
+}
+
+.text-uppercase {
+    color: white !important;
+}
+
+.text-uppercase:nth-child(1) {
+    color: white !important;
+    font-weight: 700; 
+}
+
+ul li a {
+    color: lightblue !important;
+    text-decoration: none;
+    font-family: NeueMontrealMediumItalic;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+footer {
+    background: linear-gradient(#132E43, #131924);
+    border: none;
+    // background-image: linear-gradient(to , , #151529, #1b1a39, #211f4a, #2a235a);
+    // background-color: #253148 !important;
+}
+
+.bg {
+    background-color: #111123;
+}
+
+.button-icon i{
+    color: darkgray !important;
+}
+
+.brand {
+    color: lightslategray;
+}
