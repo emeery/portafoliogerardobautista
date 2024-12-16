@@ -24,17 +24,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
     /* const modalRef = this.modalService.open(ModalComponent, {windowClass:'dark-modal', size: 'lg', backdrop: 'static'});
     modalRef.result.then((r) => {
       if(r) {
-        gsap.registerPlugin(TextPlugin, ScrollTrigger);
-    
-    gsap.to(`#title`, {
-      duration: 3,
-      color:'honeydew',
-      fontSize: 50,
-      yPercent: 0,
-      stagger: 0.5,
-      text: `EXPERIENCIA`,
-      ease: `power2.in`
-    });
+        
       }
     }) */
   }
@@ -48,6 +38,8 @@ export class AboutComponent implements OnInit, AfterViewInit {
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
+      spacing: 10,
+      chaos: 5,
       p5: p5
     })
 

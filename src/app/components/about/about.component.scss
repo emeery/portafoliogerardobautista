@@ -6,41 +6,42 @@
     justify-content: center;
   }
   
-  .example-container {
+ .example-container {
     margin-left: 10px;
-  }
+  } 
   
-  #title {
-    font-family: NeueMontrealMediumItalic;
-    font-style: normal;
-    color: silver;
-    font-size: 35rem;
-  }
-  
-  .subtitle {
+  .company {
     font-family: NeueMontrealLight;
     font-style: normal;
-    font-size: 95px;
-    color: whitesmoke;
+    font-size: 10vw;
+    color: bisque;
   }
   
-  .subtitle:nth-child(1) {
-    font-family: NeueMontrealLight;
-    font-style: normal;
-    font-size: 55px;
-    color: whitesmoke;
+
+  @media only screen and (max-width : 700px) {
+    #vanta-exp {
+      min-width: 70%;
+      min-height: 70%;
+      
+    }
+    .company {
+      font-family: NeueMontrealLight;
+      font-style: normal;
+      font-size: 9vw;
+      color: greenyellow;
+    }
+
+    .date {
+      font-family: NeueMontrealLight;
+      font-style: normal;
+      font-size: 8vw;
+      color: whitesmoke;
+    }
   }
   
+ 
   
-  
-  .date {
-    font-family: NeueMontrealLight;
-    font-style: normal;
-    font-size: 35px;
-    color: whitesmoke;
-  }
-  
-  span {
+ /*  span {
     color: white;
   }
   
@@ -49,5 +50,42 @@
     font-style: normal;
     font-size: 14px;
     color: lightslategray;
+  } */
+
+/* @media (min-width:961px)  { 
+  #vanta-exp {
+    min-width: 60%;
+    min-height: 60%;
+    
   }
+  .company {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 16vw;
+    color: greenyellow;
+  }
+ }
+@media (min-width:1025px) { 
+  .company {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 16vw;
+    color: slateblue;
+  }
+ }
+@media (min-width:1281px) { 
+  #vanta-exp {
+    min-width: 100%;
+    min-height: 100%;
+    
+  }
+  .company {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 10vw;
+    color: greenyellow;
+  }
+ } */
+  
+
   
