@@ -1,0 +1,6 @@
+/* const modalRef = this.modalService.open(ModalComponent, {windowClass:'dark-modal', size: 'lg', backdrop: 'static'});
+    modalRef.result.then((r) => {
+      if(r) {
+        
+      }
+    }) */
