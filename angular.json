@@ -46,13 +46,13 @@
               "src/assets/fonts/customFonts.scss"
             ],
             "scripts": [
-              "./src/scripts/three.min.js",
-              "./src/scripts/vanta.trunk.min.js",
-              "./src/scripts/vanta.rings.min.js",
-              "./src/scripts/vanta.globe.min.js",
-              "./src/scripts/vanta.fog.min.js",
-              "./src/scripts/vanta.topology.min.js",
-              "./src/scripts/vanta.halo.min.js",
+              "./src/scripts/vanta/three.min.js",
+              "./src/scripts/vanta/vanta.trunk.min.js",
+              "./src/scripts/vanta/vanta.rings.min.js",
+              "./src/scripts/vanta/vanta.globe.min.js",
+              "./src/scripts/vanta/vanta.fog.min.js",
+              "./src/scripts/vanta/vanta.topology.min.js",
+              "./src/scripts/vanta/vanta.halo.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },

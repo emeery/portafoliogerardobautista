@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import ScrollSmoother from 'gsap-trial/dist/ScrollSmoother';
-import ScrollTrigger from 'gsap-trial/dist/ScrollTrigger';
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from 'gsap';
 
 @Component({
@@ -16,7 +16,9 @@ export class AppComponent implements OnInit, AfterViewInit  {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('proces', process);
+  }
 
   ngAfterViewInit(): void {
     console.log('ScrollSmoother=>', ScrollSmoother);
