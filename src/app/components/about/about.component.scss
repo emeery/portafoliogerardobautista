@@ -1,42 +1,66 @@
 .example-sidenav-content {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  
- .example-container {
-    margin-left: 10px;
-  } 
-  
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-container {
+  margin-left: 10px;
+}
+
+#vanta-exp {
+  min-width: 100%;
+  min-height:100%  
+}
+
+#title {
+  font-family: NeueMontrealMediumItalic;
+ margin-top: 15vh; 
+}
+
+.company {
+  font-family: NeueMontrealLight;
+  font-style: normal;
+  font-size: 10vw;
+  color: bisque;
+}
+// mobile
+@media only screen and (max-width : 700px) {
   .company {
     font-family: NeueMontrealLight;
     font-style: normal;
     font-size: 10vw;
-    color: bisque;
+    color: lightcoral;
   }
-  
 
-  @media only screen and (max-width : 700px) {
-    .company {
-      font-family: NeueMontrealLight;
-      font-style: normal;
-      font-size: 10vw;
-      color: lightcoral;
-    }
-
-    .date {
-      font-family: NeueMontrealLight;
-      font-style: normal;
-      font-size: 8vw;
-      color: whitesmoke;
-    }
+  .date {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 8vw;
+    color: lightyellow;
   }
-  
- 
-  
- /*  span {
+}
+// desktop
+@media only screen and (min-width: 700px)  { 
+
+  .company {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 10vw;
+    color: lightcoral;
+  }
+
+  .date {
+    font-family: NeueMontrealLight;
+    font-style: normal;
+    font-size: 5vw;
+    color: lightyellow;
+  }
+}
+
+
+/*  span {
     color: white;
   }
   
@@ -81,6 +105,3 @@
     color: greenyellow;
   }
  } */
-  
-
-  

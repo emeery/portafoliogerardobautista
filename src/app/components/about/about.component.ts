@@ -21,12 +21,36 @@ export class AboutComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    /* const modalRef = this.modalService.open(ModalComponent, {windowClass:'dark-modal', size: 'lg', backdrop: 'static'});
-    modalRef.result.then((r) => {
-      if(r) {
-        
-      }
-    }) */
+    gsap.registerPlugin(TextPlugin, ScrollTrigger);
+    let mm = gsap.matchMedia();
+    // mobile
+    mm.add("(max-width: 700px)", () => {
+      gsap.to(`#title`, {
+        duration: 3,
+        color:'honeydew',
+        fontSize: 38,
+        stagger: 0.5,
+        text: `EXPERIENCIA`,
+        ease: `power2.in`
+      });
+
+    
+      return () => { // optional
+        // custom cleanup code here (runs when it STOPS matching)
+      };
+    });
+    // desktop
+    mm.add("(min-width: 800px)", () => {
+      gsap.to(`#title`, {
+        duration: 3,
+        color:'honeydew',
+        fontSize: 100,
+        stagger: 0.5,
+        text: `EXPERIENCIA`,
+         ease: `power2.in`
+      });
+    });
+    
   }
   ngAfterViewInit(): void {
     VANTA.TRUNK({
