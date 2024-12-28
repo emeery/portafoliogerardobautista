@@ -2,9 +2,12 @@ import { AfterViewInit, Component, Inject, OnInit, PLATFORM_ID } from '@angular/
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { SplitText } from "gsap/SplitText";
 import { TextPlugin } from "gsap/TextPlugin";
-import { ModalComponent } from '../modal/modal.component';
 import p5 from 'p5'
+
+/* import { ModalComponent } from '../modal/modal.component'; */
+
 declare var VANTA: any;
 
 @Component({
@@ -21,18 +24,30 @@ export class AboutComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    gsap.registerPlugin(TextPlugin, ScrollTrigger);
+    gsap.registerPlugin(TextPlugin, ScrollTrigger, SplitText);
     let mm = gsap.matchMedia();
+    var split = new SplitText("#split", {type: "chars"});
+    let chars = split.chars;
     // mobile
     mm.add("(max-width: 700px)", () => {
-      gsap.to(`#title`, {
+      gsap.from(chars, {
+        y: 130,
+        stagger: 0.02,
+        ease: 'back.out',
+        duration: 2,
+        scrollTrigger: {
+          trigger: 'split',
+          start: 'top 40%'
+        }
+      })
+      /* gsap.to(`#title`, {
         duration: 3,
         color:'honeydew',
         fontSize: 38,
         stagger: 0.5,
         text: `EXPERIENCIA`,
         ease: `power2.in`
-      });
+      }); */
 
     
       return () => { // optional
@@ -41,14 +56,20 @@ export class AboutComponent implements OnInit, AfterViewInit {
     });
     // desktop
     mm.add("(min-width: 800px)", () => {
-      gsap.to(`#title`, {
+      gsap.from(chars, {
+        duration: 1,
+        autoAlpha: 0,
+        stagger: 0.05,
+        yPercent: 130
+      })
+      /* gsap.to(`#title`, {
         duration: 3,
         color:'honeydew',
         fontSize: 100,
         stagger: 0.5,
         text: `EXPERIENCIA`,
          ease: `power2.in`
-      });
+      }); */
     });
     
   }

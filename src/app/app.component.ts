@@ -17,11 +17,11 @@ export class AppComponent implements OnInit, AfterViewInit  {
   constructor() {}
 
   ngOnInit(): void {
-    console.log('proces', process);
+    // console.log('proces', process);
   }
 
   ngAfterViewInit(): void {
-    console.log('ScrollSmoother=>', ScrollSmoother);
+/*     console.log('ScrollSmoother=>', ScrollSmoother); */
     gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
     this.smoother = ScrollSmoother.create({
       content: '#smooth-content',
