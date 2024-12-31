@@ -5,30 +5,18 @@
   justify-content: center;
 } 
 
-/* 
-.example-container {
-  margin-left: 10px;
-} */
-
-section {
+section{
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-} 
+}
+
 
 .container {
   overflow: hidden;
   height: 20vh;
-  //  border: solid 2px lightgray;
   padding-top: 5rem;  
-}
-
-h1 {
-  font-size: 8vw;
-  font-family: NeueMontrealMediumItalic;
-  margin: 0;
-  line-height: 0.8;
 }
 
 #vanta-exp {
@@ -36,17 +24,7 @@ h1 {
   min-height:100%  
 }
 
-#title {
-  font-family: NeueMontrealMediumItalic;
-  margin-top: 15vh; 
-}
 
-.company {
-  font-family: NeueMontrealLight;
-  font-style: normal;
-  font-size: 10vw;
-  color: bisque;
-}
 // mobile
 @media only screen and (max-width : 700px) {
   .company {
@@ -69,6 +47,14 @@ h1 {
     font-size: 20vw;
     margin: 0;
     line-height: 0
+  }
+
+  #quote {
+    font-size: 18vw;
+    color: thistle;
+    font-family: BebasNeueRegular;
+    text-align: center;
+    line-height: 1.2
   }
 }
 // desktop
